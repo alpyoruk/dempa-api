@@ -7,7 +7,6 @@ using CarSalesAPI.Models;
 
 namespace CarSalesAPI.Controllers
 {
-    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class CaseController : ApiController
     {
         [HttpGet, Route("api/Case/GetCases")]
