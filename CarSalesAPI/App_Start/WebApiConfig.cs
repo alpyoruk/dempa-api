@@ -11,7 +11,7 @@ namespace CarSalesAPI.App_Start
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-            var cors = new EnableCorsAttribute("http://192.168.1.102:3030", "*", "GET,POST");
+            var cors = new EnableCorsAttribute("*", "*", "*");
             config.EnableCors(cors);
             // Web API routes
             config.MapHttpAttributeRoutes();
