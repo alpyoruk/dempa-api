@@ -14,5 +14,10 @@ namespace CarSalesAPI
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
+
+        public void ProcessRequest(HttpContext context)
+        {
+            context.Response.AddHeader("Access-Control-Allow-Origin", "*");
+        }
     }
 }
